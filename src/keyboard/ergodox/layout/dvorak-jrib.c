@@ -34,7 +34,7 @@ _tab,     _quote,     _comma, _period,      _P, _Y,    _backslash,
                                               0,      0, _home,
                                             _space,   1,  _end,
 // right hand
-        3, _6,      _7,      _8,      _9,      _0,     _bs,
+        2, _6,      _7,      _8,      _9,      _0,     _bs,
 _insert, _F,      _G,      _C,      _R,      _L, _slash,
            _D,      _H,      _T,      _N,      _S,    _dash,
         _del, _B,      _M,      _W,      _V,      _Z,   _shiftR,
