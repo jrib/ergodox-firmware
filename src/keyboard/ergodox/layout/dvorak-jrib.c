@@ -287,7 +287,7 @@ NULL,
 // left hand
    kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
  ktrans,kprrel,sshprre, kprrel, kprrel,   kprrel,   NULL,
- ktrans, sshprre, sshprre, sshprre, sshprre,sshprre,
+ kprrel, sshprre, sshprre, sshprre, sshprre,sshprre,
  ktrans, kprrel, sshprre, sshprre, kprrel,kprrel,  kprrel,
  ktrans, ktrans, ktrans, ktrans, ktrans,
                                                  ktrans, ktrans,
