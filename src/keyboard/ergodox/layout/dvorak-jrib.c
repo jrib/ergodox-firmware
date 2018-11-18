@@ -112,6 +112,28 @@ _F12,_F6,  _F7,  _F8,   _F9, _F10,0,
 0, 0,     0,
 0, 0, _0_kp ),
 
+
+	KB_MATRIX_LAYER(  // layout: layer 4: qwerty
+// unused
+0,
+// left hand
+    _equal,     _1,         _2,      _3,      _4,    _5, _esc,
+_backslash,     _Q,         _W,      _E,      _R,    _T,    1,
+      _tab,     _A,         _S,      _D,      _F,    _G,
+   _shiftL,     _Z,         _X,      _C,      _V,    _B,    1,
+     _guiL, _grave, _backslash, _arrowL, _arrowR,
+                                                 _ctrlL, _altL,
+                                              0,      0, _home,
+                                            _bs,   _del,  _end,
+// right hand
+        3, _6,      _7,      _8,      _9,         _0,     _dash,
+_bracketL, _Y,      _U,      _I,      _O,         _P, _bracketR,
+           _H,      _J,      _K,      _L, _semicolon,    _quote,
+        1, _N,      _M,  _comma, _period,     _slash,   _shiftR,
+               _arrowL, _arrowD, _arrowU,    _arrowR,     _guiR,
+ _altR, _ctrlR,
+_pageU,      0,      0,
+_pageD, _enter, _space ),
 };
 
 // ----------------------------------------------------------------------------
@@ -251,6 +273,27 @@ NULL,
  ktrans, ktrans, ktrans,
  ktrans, ktrans, kprrel ),
 
+    KB_MATRIX_LAYER(  // press: layer 4: qwerty
+// unused
+NULL,
+// left hand
+ kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
+ kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, lpush1,
+ kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
+ s2kcap, kprrel, kprrel, kprrel, kprrel, kprrel, lpush1,
+ kprrel, kprrel, kprrel, kprrel, kprrel,
+                                                 kprrel, kprrel,
+                                           NULL,   NULL, kprrel,
+                                         kprrel, kprrel, kprrel,
+// right hand
+        slpunum, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
+         kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
+                 kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
+         lpush1, kprrel, kprrel, kprrel, kprrel, kprrel, s2kcap,
+                         kprrel, kprrel, kprrel, kprrel, kprrel,
+ kprrel, kprrel,
+ kprrel,   NULL,   NULL,
+ kprrel, kprrel, kprrel ),
 };
 
 // ----------------------------------------------------------------------------
@@ -350,21 +393,26 @@ NULL,
  ktrans, ktrans, kprrel ),
 
 
-	KB_MATRIX_LAYER(  // release: layer 3: nothing (just making sure unused
-			  // functions don't get compiled out)
+	KB_MATRIX_LAYER(  // release: layer 4: qwerty
 // unused
 NULL,
-// other
- kprrel, lpush8,  lpop8,   NULL,   NULL,   NULL,   NULL,   NULL,
-   ktog, lpush9,  lpop9,   NULL,   NULL,   NULL,   NULL,   NULL,
- ktrans,lpush10, lpop10,   NULL,   NULL,   NULL,   NULL,   NULL,
- lpush1,  lpop1,   NULL,   NULL,   NULL,   NULL,   NULL,   NULL,
- lpush2,  lpop2, dbtldr,   NULL,   NULL,   NULL,   NULL,   NULL,
- lpush3,  lpop3,   NULL,   NULL,   NULL,   NULL,   NULL,   NULL,
- lpush4,  lpop4, s2kcap,   NULL,   NULL,   NULL,   NULL,   NULL,
- lpush5,  lpop5,slpunum,   NULL,   NULL,   NULL,   NULL,   NULL,
- lpush6,  lpop6,slponum,   NULL,   NULL,   NULL,   NULL,   NULL,
- lpush7,  lpop7,   NULL,   NULL,   NULL,   NULL,   NULL,   NULL )
+// left hand
+ kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
+ kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,   NULL,
+ kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
+ s2kcap, kprrel, kprrel, kprrel, kprrel, kprrel,  lpop1,
+ kprrel, kprrel, kprrel, kprrel, kprrel,
+                                                 kprrel, kprrel,
+                                           NULL,   NULL, kprrel,
+                                         kprrel, kprrel, kprrel,
+// right hand
+          NULL, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
+        kprrel, kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
+                kprrel, kprrel, kprrel, kprrel, kprrel, kprrel,
+         lpop1, kprrel, kprrel, kprrel, kprrel, kprrel, s2kcap,
+                        kprrel, kprrel, kprrel, kprrel, kprrel,
+ kprrel, kprrel,
+ kprrel,   NULL,   NULL,
+ kprrel, kprrel, kprrel ),
 
 };
-
